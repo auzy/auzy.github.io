@@ -47,7 +47,8 @@ main {
 
 #hometitle, #homesubtitle {
   text-align: center;
-  width: 40%;
+  width: 50%;
+  color: white;
 }
 
 #sec1, #sec2, #sec3, #sec4, #sec5 {
@@ -64,9 +65,14 @@ main {
   margin-top: -20px
 }
 
+#showPreview {
+  padding-bottom: 25px;
+}
+
 #sec1 {
   color: #FFFFFF;
 }
+
 #sec2 {
   background-color: #FCCDD3;
 }
@@ -159,6 +165,16 @@ form {
 
 #sec11, #sec51 {
   display: none;
+}
+
+#pilotheader {
+  padding-top: 50px;
+}
+
+#xopilot {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 a {
