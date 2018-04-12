@@ -260,6 +260,9 @@ Responsive Web
   div {
     padding-top: 25px
   }
+  form {
+    width: 90%
+  }
 }
 
 /**
