@@ -89,11 +89,36 @@ main {
   color: #FFFFFF;
 }
 
+iframe {
+  margin: auto;
+}
+
 form {
   display: block;
-  margin-left: auto;
-  margin-right: auto;
+  margin: auto;
   width: 25%;
+  border: white;
+  border-width: 10px;
+}
+
+/*
+Responsive Web
+*/
+
+@media only screen and (max-width: 600px) {
+  img {
+    width: 90%
+  }
+  #logo {
+    width: 50%;
+  }
+  div {
+    padding-top: 25px
+  }
+  form {
+    width: 80%;
+    margin-left: 31px;
+  }
 }
 
 #emailmessage {
@@ -111,8 +136,7 @@ form {
   font-family: Avenir;
   font-weight: normal;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
+  margin: auto;
   min-width: 25%;
   margin-top: 25px;
   width: 100%;
@@ -130,12 +154,11 @@ form {
   font-family: Avenir;
   font-weight: bolder;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
   min-width: 25%;
-  margin-bottom: 25px;
+  margin: auto;
+ /* margin-bottom: 25px;*/
   margin-top: 10px;
-  width: 75%;
+  width: 104%;
 }
 
 #confirmation {
@@ -245,25 +268,6 @@ a {
     text-decoration: none; }
     .social-media-list a:hover .username {
       text-decoration: underline; }
-
-/*
-Responsive Web
-*/
-
-@media only screen and (max-width: 600px) {
-  img {
-    width: 90%
-  }
-  #logo {
-    width: 50%;
-  }
-  div {
-    padding-top: 25px
-  }
-  form {
-    width: 90%
-  }
-}
 
 /**
  * Blockquotes

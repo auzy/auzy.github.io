@@ -10,16 +10,19 @@ dl, dd, ol, ul, figure {
 /**
  * Basic styling
  */
+
+
 body {
   font: 400 16px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  color: #111;
-  background-color: #fdfdfd;
+  color: #3e376f;
   -webkit-text-size-adjust: 100%;
   -webkit-font-feature-settings: "kern" 1;
   -moz-font-feature-settings: "kern" 1;
   -o-font-feature-settings: "kern" 1;
   font-feature-settings: "kern" 1;
-  font-kerning: normal; }
+  font-kerning: normal; 
+  font-family: Avenir;
+}
 
 /**
  * Set `margin-bottom` to maintain vertical rhythm
@@ -37,13 +40,181 @@ main {
   display: block;
   /* Default value of `display` of `main` element is 'inline' in IE 11. */ }
 
+#tallylogo {
+  width: 500px;
+  height: auto;
+}
+
+#hometitle, #homesubtitle {
+  text-align: center;
+  width: 90%;
+  color: white;
+}
+
+#sec1, #sec2, #sec3, #sec4, #sec5 {
+  padding-top: 50px;
+  padding-bottom: 25px;
+}
+
+#logo {
+  width: 25% ;
+}
+
+#subtitle {
+  font-weight: normal !important;
+  margin-top: -20px
+}
+
+#showPreview {
+  padding-bottom: 25px;
+}
+
+#sec1 {
+  color: #FFFFFF;
+}
+
+#sec2 {
+  background-color: #FCCDD3;
+}
+
+#sec3 {
+  background-color: #62BCFA;
+}
+
+#sec4 {
+  background-color: #BBC4EF;
+}
+
+#sec5 {
+  color: #FFFFFF;
+}
+
+iframe {
+  margin: auto;
+}
+
+form {
+  display: block;
+  margin: auto;
+  width: 25%;
+  border: white;
+  border-width: 10px;
+}
+
+/*
+Responsive Web
+*/
+
+@media only screen and (max-width: 600px) {
+  img {
+    width: 90%
+  }
+  #logo {
+    width: 50%;
+  }
+  div {
+    padding-top: 25px
+  }
+  form {
+    width: 80%;
+    margin-left: 31px;
+  }
+}
+
+#emailmessage {
+  margin-bottom: -15px
+}
+
+#emailaddress {
+  border: white;
+  border-style: solid;
+  border-width: 5px;
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  font-size: 20px;
+  font-family: Avenir;
+  font-weight: normal;
+  display: block;
+  margin: auto;
+  min-width: 25%;
+  margin-top: 25px;
+  width: 100%;
+}
+
+#subscribe {
+  background-color: #6534ff;
+  border: white;
+  border-style: solid;
+  border-width: 5px;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-size: 24px;
+  font-family: Avenir;
+  font-weight: bolder;
+  display: block;
+  min-width: 25%;
+  margin: auto;
+ /* margin-bottom: 25px;*/
+  margin-top: 10px;
+  width: 104%;
+}
+
+#confirmation {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.button {
+  background-color: #6534ff;
+  border: white;
+  border-style: solid;
+  border-width: 5px;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 24px;
+  font-family: Avenir;
+  font-weight: bolder;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  min-width: 25%;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+#sec11, #sec51 {
+  display: none;
+}
+
+#pilotheader {
+  padding-top: 50px;
+}
+
+#xopilot {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+a {
+  color: white !important;
+}
+
 /**
  * Images
  */
 img {
   max-width: 100%;
-  vertical-align: middle; }
-
+  vertical-align: middle;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
 /**
  * Figures
  */
@@ -67,8 +238,21 @@ li > ol {
  * Headings
  */
 h1, h2, h3, h4, h5, h6 {
-  font-weight: 400; }
+  font-weight: 400;
+  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+}
 
+h1 {
+  font-weight: bold;
+}
+
+h2 {
+  margin-top: -15px;
+}
 /**
  * Links
  */
