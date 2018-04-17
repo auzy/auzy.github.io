@@ -24,7 +24,7 @@
 	  	<h1 id = "subtitle">and you're the matchmaker</h1>
 	  	<img id = "showPreview"; src="images/showpreview.png">
 	  	
-	  	<div>
+	  	<div id = "form1">
 		  	<h3 id="emailmessage">Not so fast! We’re not live right now. Get the invite for the next show!</h3>
 		  	<script type="text/javascript">var submitted=false;</script>
 
@@ -64,21 +64,22 @@
 	</div>
 
 	<div id = "sec5">
-		<h3 id="emailmessage">Not so fast! We’re not live right now. Get the invite for the next show!</h3>
+		
+		<div id = "form2">
+			<h3 id="emailmessage">Not so fast! We’re not live right now. Get the invite for the next show!</h3>
+			<script type="text/javascript">var submitted=false;</script>
+			<iframe 
+			  name="hidden_iframe" 
+			  id="hidden_iframe" 
+			  style="display:none;" 
+			  onload="if(submitted) {window.location = '/shows/xo/confirmed';}">
+			</iframe>
 
-		<script type="text/javascript">var submitted=false;</script>
-
-		<iframe 
-		  name="hidden_iframe" 
-		  id="hidden_iframe" 
-		  style="display:none;" 
-		  onload="if(submitted) {window.location = '/shows/xo/confirmed';}">
-		</iframe>
-
-		<form id="subscribeForm" action="https://docs.google.com/forms/d/e/1FAIpQLScMvAN3EQq13knhVJQkbmsXqJGxUD5y3RJp5VO5UGLgkTdOdA/formResponse" method="POST" target="hidden_iframe" onsubmit="submitted=true;">
-		<input id="emailaddress" type="email" name="entry.1745561865" placeholder="Email">
-		<input id="subscribe" type="submit" value="submit">
-		</form>
+			<form id="subscribeForm" action="https://docs.google.com/forms/d/e/1FAIpQLScMvAN3EQq13knhVJQkbmsXqJGxUD5y3RJp5VO5UGLgkTdOdA/formResponse" method="POST" target="hidden_iframe" onsubmit="submitted=true;">
+			<input id="emailaddress" type="email" name="entry.1745561865" placeholder="Email">
+			<input id="subscribe" type="submit" value="submit">
+			</form>
+		</div>
 	</div>
   
 </body>
