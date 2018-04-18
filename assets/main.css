@@ -147,7 +147,7 @@ form {
 }
 
 .button {
-  background-color: #6534ff;
+  background-color: #ffffff;
   border: white;
   border-style: solid;
   border-width: 5px;
@@ -180,8 +180,12 @@ form {
   margin-right: auto;
 }
 
+#titlemobile, #subtitlemobile {
+  display: none;
+}
+
 a {
-  color: white !important;
+  color: #6534FF !important;
 }
 
 /**
@@ -205,10 +209,28 @@ Responsive Web
     width: 90%
   }
   #logo {
-    width: 50%;
+    width: 30%;
+    margin-top: -30px;
+    margin-left: 10px
+  }
+  #subtitle, #title{
+    display: none;
+  }
+  #titlemobile {
+    display: block;
+    font-size: 125%;
+  }
+  #subtitlemobile {
+    display: block;
+    padding-top: 20px;
+    margin-bottom: -20px;
+  }
+  #showPreview {
+    padding-top: 20px;
+    margin-bottom: -20px;
   }
   div {
-    padding-top: 25px
+    padding-top: 0px
   }
   form {
     width: 80%;
