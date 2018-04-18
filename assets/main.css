@@ -209,9 +209,9 @@ Responsive Web
     width: 90%
   }
   #logo {
-    width: 30%;
+    width: 35%;
     margin-top: -30px;
-    margin-left: 10px
+/*    margin-left: 10px*/
   }
   #subtitle, #title{
     display: none;
