@@ -51,13 +51,73 @@ main {
   color: white;
 }
 
-#sec1, #sec2, #sec3, #sec4, #sec5 {
+/* Add a black background color to the top navigation */
+.topnav {
+    /*background-color: #333;*/
+    overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: right;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: bolder;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+    background-color: #FFFFFF;
+    color: #6534ff;
+    font-weight: bolder;
+}
+
+#sec1 {
+  padding-top: 10px;
+  padding-bottom: 25px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+  float: left;
+  width: 49%;
+  padding: 5px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.row {
+  padding-left: 20px;
+  padding-top: 100px;
+  padding-right: 20px;
+  padding-bottom: 100px;
+}
+
+#prizes, #howtoplay, #sec4, #sec5 {
   padding-top: 50px;
   padding-bottom: 25px;
 }
 
 #logo {
-  width: 25% ;
+  width: 150px ;
+  margin-bottom: -70px;
+  padding-left: 10px;
 }
 
 #subtitle {
@@ -67,17 +127,22 @@ main {
 
 #showPreview {
   padding-bottom: 25px;
+  padding-left: 30px;
+}
+
+#titlediv {
+  padding-top: 20px;
 }
 
 #sec1 {
   color: #FFFFFF;
 }
 
-#sec2 {
+#prizes {
   background-color: #FCCDD3;
 }
 
-#sec3 {
+#howtoplay {
   background-color: #62BCFA;
 }
 
@@ -151,13 +216,14 @@ form {
   border: white;
   border-style: solid;
   border-width: 5px;
-  color: white;
+  border-radius: 50px;
+  color: #6534ff;
   padding: 15px 32px;
   text-align: center;
-  text-decoration: none;
+  text-decoration: none !important;
   font-size: 24px;
   font-family: Avenir;
-  font-weight: bolder;
+  font-weight: bold;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -184,10 +250,10 @@ form {
   display: none;
 }
 
-a {
-  color: #6534FF !important;
+/*a {
+  color: #000000 !important;
 }
-
+*/
 /**
  * Images
  */
@@ -195,39 +261,84 @@ img {
   max-width: 100%;
   vertical-align: middle;
   display: block;
+}
+
+#tallylogo {
   margin-left: auto;
   margin-right: auto;
   width: 50%;
 }
 
+.bodyimg {
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+} 
+
+#subtitle, #title{
+    font-size: 150%;
+  }
 /*
 Responsive Web
 */
 
+/*
+Smaller size web
+*/
+@media only screen and (max-width: 1065px) {
+  .column {
+    float: left;
+    width: 90%;
+    padding: 5px;
+  }
+  #showPreview {
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 0px;
+  }
+  .row {
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-right: 10px;
+    padding-bottom: 0px;
+  }
+}
+
+/*
+Mobile
+*/
 @media only screen and (max-width: 600px) {
-  img {
+  .bodyimg {
     width: 90%
   }
-  #logo {
-    width: 35%;
-    margin-top: -30px;
-/*    margin-left: 10px*/
-  }
-  #subtitle, #title{
+  .nonlogo {
     display: none;
   }
-  #titlemobile {
-    display: block;
-    font-size: 125%;
+  .column {
+  width: 100%;
   }
-  #subtitlemobile {
-    display: block;
-    padding-top: 20px;
-    margin-bottom: -20px;
+  #showPreview {
+  padding-bottom: 0px;
+  padding-left: 0px;
+  margin-left: auto;
+  margin-right: auto;
+  }
+  .button {
+  font-size: 20px;
+  padding: 5px 10px;
+  }
+  .row {
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+  }
+  #subtitle, #title{
+    font-size: 150%;
   }
   #showPreview {
     padding-top: 20px;
-    margin-bottom: -20px;
   }
   div {
     padding-top: 0px
@@ -280,12 +391,12 @@ h2 {
  * Links
  */
 a {
-  color: #2a7ae2;
+  color: #6534ff;
   text-decoration: none; }
-  a:visited {
-    color: #1756a9; }
+  /*a:visited {
+    color: #FFFFFF; }*/
   a:hover {
-    color: #111;
+    /*color: #111;*/
     text-decoration: underline; }
   .social-media-list a:hover {
     text-decoration: none; }
