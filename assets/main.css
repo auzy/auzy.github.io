@@ -121,8 +121,8 @@ main {
 }
 
 #subtitle {
-  font-weight: normal !important;
-  margin-top: -20px
+  margin-top: -20px;
+  font-size: 20px !important;
 }
 
 #showPreview {
@@ -230,6 +230,11 @@ form {
   min-width: 25%;
   margin-top: 25px;
   margin-bottom: 25px;
+}
+
+.appbutton {
+  padding: 10px;
+  margin: auto;
 }
 
 #sec11, #sec51 {
