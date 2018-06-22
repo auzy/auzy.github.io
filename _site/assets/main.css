@@ -51,9 +51,7 @@ main {
   color: white;
 }
 
-/* Add a black background color to the top navigation */
 .topnav {
-    /*background-color: #333;*/
     overflow: hidden;
 }
 
@@ -351,6 +349,12 @@ Mobile
   form {
     width: 80%;
     margin-left: 31px;
+  }
+  #maintitle {
+    font-size: 150% !important;
+  }
+  .topnav {
+    min-height: 60px;
   }
 }
 
